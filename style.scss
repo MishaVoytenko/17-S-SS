@@ -63,12 +63,16 @@ body {
   height: 420px;
   padding: 0 85px;
   padding: 70px 0;
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: end;
+  // flex-direction: column;
 
   &__container {
     max-width: 430px;
+    margin-left: 85px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
   }
 
   &__title {
@@ -124,6 +128,25 @@ body {
     color: #666666;
     text-decoration: none;
   }
+
+  &__link:hover {
+    color: #5a02dd;
+    border: 2px solid #5a02dd;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+  }
 }
 
 .foto-block {
@@ -131,6 +154,51 @@ body {
   height: 420px;
   border-right: 1px solid #ffcc00;
   padding: 70px 0;
+  position: relative;
+}
+
+.item-one {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -15px;
+  top: 55px;
+  border-left: 1px solid #ffcc00;
+  border-top: 1px solid #ffcc00;
+}
+
+.item-two {
+  content: " ";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 170px;
+  top: 55px;
+  border-right: 1px solid #ffcc00;
+  border-top: 1px solid #ffcc00;
+}
+
+.item-three {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 170px;
+  bottom: 75px;
+  border-right: 1px solid #ffcc00;
+  border-bottom: 1px solid #ffcc00;
+}
+
+.item-four {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -15px;
+  bottom: 75px;
+  border-left: 1px solid #ffcc00;
+  border-bottom: 1px solid #ffcc00;
 }
 
 .decoration-line {
@@ -139,6 +207,8 @@ body {
   background-color: #ffcc00;
   margin: 0 10px;
   position: relative;
+  left: calc(50% - 34px);
+  bottom: 21px;
 
   &::before,
   &::after {
@@ -156,4 +226,18 @@ body {
   &::before {
     right: 10px;
   }
+}
+
+.button {
+  width: 118px;
+  height: 24px;
+  border: 1px solid #ffcc00;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
